@@ -47,8 +47,8 @@ def convert_image(update, context):
 def main():
     """Start the bot."""
     # Create the Updater and pass it your bot's token.
-    #key = os.environ.get("token","")
-    updater = Updater("1609511505:AAGqnwB54dHEDmesqfytfyyN_aLyvhOwLS8", use_context=True)
+    key = os.environ.get("token","")
+    updater = Updater(key, use_context=True)
 
     # Get the dispatcher to register handlers
     dispatcher = updater.dispatcher
