@@ -1,4 +1,5 @@
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
+import os
 try:
     from PIL import Image
 except ImportError:
