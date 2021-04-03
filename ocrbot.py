@@ -1,4 +1,5 @@
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
+import os
 try:
     from PIL import Image
 except ImportError:
@@ -50,7 +51,7 @@ def convert_image(update, context):
 def main():
     """Start the bot."""
     # Create the Updater and pass it your bot's token.
-    key = os.environ['token']
+    key = os.environ.get("token","")
     updater = Updater(key, use_context=True)
 
     # Get the dispatcher to register handlers
