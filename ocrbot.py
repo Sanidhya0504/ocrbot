@@ -10,7 +10,10 @@ from traceback import print_exc
 # context.
 def start(update, context):
     """Send a message when the command /start is issued."""
-    update.message.reply_text('Hi! This is my first telegram bot!')
+    update.message.reply_text('Hi! This is my first telegram bot! It can extract simple english text from images.')
+    update.message.reply_text('The bot is still under development. Results might not be accurate.')
+    update.message.reply_text('For accurate and fast results send images with black color text and white background.')
+    update.message.reply_text('Send an image and wait for the results. Might take 10 seconds to a minute to process')
 
 
 def help(update, context):
